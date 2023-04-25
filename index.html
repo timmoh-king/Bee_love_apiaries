@@ -11,6 +11,50 @@
 
 <body>
     <!--Navbar-->
+    <nav class="relative container mx-auto p-6">
+        <div class="flex items-center justify-between">
+            <!--Logo-->
+            <div class="pt-1">
+                <img src="https://raw.githubusercontent.com/bradtraversy/tailwind-landing-page/249d73eaa143aa213a5d56de2b2a941f68b20a7a/img/logo.svg"
+                    alt="logo">
+            </div>
+
+            <!--Menu-items-->
+            <div class="hidden space-x-6 md:flex">
+                <a href="#" class="hover:text-brightRed hover:font-semibold">Home</a>
+                <a href="#" class="hover:text-brightRed hover:font-semibold">About us</a>
+                <a href="#" class="hover:text-brightRed hover:font-semibold">Services</a>
+                <a href="#" class="hover:text-brightRed hover:font-semibold">Products</a>
+                <a href="#" class="hover:text-brightRed hover:font-semibold">Contact</a>
+            </div>
+
+            <!--Button-->
+            <a href="#"
+                class="hidden p-2 px-6 text-white bg-brightRed rounded-full baseline hover:bg-darkBlue hover:text-brightRed md:block ">
+                Get Started
+            </a>
+
+            <!--Hamburger icon-->
+            <button id="menu-btn" class="open block hamburger md:hidden focus:outline-none">
+                <!--The bars-->
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+            </button>
+        </div>
+
+        <!--Mobile menu-->
+        <div class="md:hidden">
+            <div id="menu"
+                class="absolute hidden flex-col items-center self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                <a class="hover:text-brightRed hover:font-semibold" href="#">Home</a>
+                <a class="hover:text-brightRed hover:font-semibold" href="#">About us</a>
+                <a class="hover:text-brightRed hover:font-semibold" href="#">Services</a>
+                <a class="hover:text-brightRed hover:font-semibold" href="#">Products</a>
+                <a class="hover:text-brightRed hover:font-semibold" href="#">Contact</a>
+            </div>
+        </div>
+    </nav>
 
     <!--Landing page-->
 
@@ -23,6 +67,8 @@
     <!--Subscribe-->
 
     <!--Contact us-->
+
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
